@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | BlackJack</title>
+    <title>Unity WebGL Player | WhiteJoker_Blackjack</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1440 height=768></canvas>
+      <canvas id="unity-canvas" width=1730 height=1117></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">BlackJack</div>
+        <div id="unity-build-title">WhiteJoker_Blackjack</div>
       </div>
     </div>
     <script src="web3/index.js"></script>
@@ -59,12 +59,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/blackjack.loader.js";
       var config = {
-        dataUrl: buildUrl + "/blackjack.data.unityweb",
-        frameworkUrl: buildUrl + "/blackjack.framework.js.unityweb",
-        codeUrl: buildUrl + "/blackjack.wasm.unityweb",
+        dataUrl: buildUrl + "/blackjack.data",
+        frameworkUrl: buildUrl + "/blackjack.framework.js",
+        codeUrl: buildUrl + "/blackjack.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "ArcadeNetwork",
-        productName: "BlackJack",
+        companyName: "DefaultCompany",
+        productName: "WhiteJoker_Blackjack",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -83,8 +83,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "1440px";
-        canvas.style.height = "768px";
+        canvas.style.width = "1730px";
+        canvas.style.height = "1117px";
       }
       loadingBar.style.display = "block";
 
