@@ -61,7 +61,12 @@ async function connect() {
   });
 
   web3Modal.clearCachedProvider();
-
+  if(!window.ethereum)
+  {
+    window.open("https://metamask.io/download/");
+    web3gl.connectAccount = "please install metamask."
+    return;
+  }
   // set provider
   provider = await web3Modal.connect();
   web3 = new Web3(provider);
